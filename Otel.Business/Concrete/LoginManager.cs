@@ -24,7 +24,7 @@ namespace Otel.Business.Concrete
             {
                 result.Add("Şifre Giriniz.");
             }
-            if (email.CheckEmail())
+            if (!email.CheckEmail())
             {
                 result.Add("Email Hatalı");
             }

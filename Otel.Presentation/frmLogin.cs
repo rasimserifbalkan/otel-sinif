@@ -23,6 +23,10 @@ namespace Otel.Presentation
         {
             DateTime t = new DateTime();
             var loginResult = _loginService.Login(txtUserName.Text, txtPassword.Text);
+            if (loginResult != null)
+            {
+                MessageBox.Show(String.Join('\n', loginResult)); 
+            }
         }
     }
 }
