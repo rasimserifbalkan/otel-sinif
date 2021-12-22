@@ -13,6 +13,15 @@ namespace Otel.Presentation
         public frmMain()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void otelEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmAddOtel = Program.staticContainer.GetInstance<frmAddOtel>();
+            frmAddOtel.MdiParent = this;
+            frmAddOtel.Show();
+
         }
     }
 }

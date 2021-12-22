@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Otel.Business.Abstract
 {
-    internal interface IOtelService
+    public interface IOtelService
     {
         void Add(OtelModel otelModel);
         List<OtelModel> List();

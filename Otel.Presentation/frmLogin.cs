@@ -27,6 +27,11 @@ namespace Otel.Presentation
             {
                 MessageBox.Show(String.Join('\n', loginResult)); 
             }
+            else
+            {
+                var main = Program.staticContainer.GetInstance<frmMain>();
+                main.ShowDialog();
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Otel.Business.Abstract;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,37 @@ namespace Otel.Presentation
 {
     public partial class frmAddOtel : Form
     {
-        public frmAddOtel()
+        private readonly IOtelService _otelService;
+        public frmAddOtel(IOtelService otelService)
         {
+            _otelService = otelService;
             InitializeComponent();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            List<string> errorList = new List<string>();
+            if (txtName.Text.Length == 0)
+            {
+                errorList.Add("İsim Giriniz");
+            }
+            if (txtPhone.Text.Length == 0)
+            {
+                errorList.Add("Telefon Giriniz.");
+            }
+            if (txtAddress.TextLength == 0)
+            {
+                errorList.Add("Adres Giriniz");
+            }
+            if (txtAddress.TextLength > 250)
+            {
+                errorList.Add("Adres 250 karakterden büyük olamaz.");
+            }
+
+            if (true)
+            {
+
+            }
         }
     }
 }
