@@ -10,6 +10,8 @@ namespace Otel.DataAccess.Concrete.EntityFramework
         {
             optionsBuilder.UseSqlServer("Data Source=185.242.162.113;Initial Catalog=db1_otel;User ID=db1_otel;Password=Abc123@@");
         }
+        // bir tablo eklendiğinde tam ismi ve modeli ile buraya eklenmelidir.
         public DbSet<User> Users { get; set; }
+        public DbSet<OtelModel> Otels { get; set; }
     }
 }

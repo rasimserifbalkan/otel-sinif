@@ -54,7 +54,15 @@ namespace Otel.Core.DataAccess.EntityFramework
         {
             using (var context = new TContext())
             {
-                return context.Set<Tablo>().Where(filter).ToList();
+                if (filter == null)
+                {
+                    return context.Set<Tablo>().ToList();
+                }
+                else
+                {
+                    return context.Set<Tablo>().Where(filter).ToList();
+                }
+                
             }
         }
 

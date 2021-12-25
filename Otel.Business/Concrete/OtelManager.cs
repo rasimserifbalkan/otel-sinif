@@ -18,7 +18,10 @@ namespace Otel.Business.Concrete
         {
             _otelDal.Add(otelModel);
         }
-
+        public void Update(OtelModel otelModel)//-----------
+        {
+            _otelDal.Update(otelModel);
+        }
         public OtelModel Get(string name)
         {
             return _otelDal.Get(x => x.Name == name);

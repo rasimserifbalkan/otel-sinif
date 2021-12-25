@@ -23,5 +23,10 @@ namespace Otel.Presentation
             frmAddOtel.Show();
 
         }
+
+        private void otelİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

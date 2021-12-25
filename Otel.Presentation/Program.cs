@@ -25,6 +25,10 @@ namespace Otel.Presentation
             container.Register<ILoginService, LoginManager>(Lifestyle.Singleton);
             container.Register<IUserDal, EfUserDal>(Lifestyle.Singleton);
 
+            container.Register<IOtelService, OtelManager>(Lifestyle.Singleton);
+            container.Register<IOtelDal, EfOtelDal>(Lifestyle.Singleton);
+
+
             container.Register<frmLogin>(Lifestyle.Singleton);
             container.Register<frmMain>(Lifestyle.Singleton);
             container.Register<frmAddOtel>(Lifestyle.Singleton);//---
