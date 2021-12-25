@@ -1,4 +1,5 @@
 ﻿using Otel.Business.Abstract;
+using Otel.Entites.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,8 +39,13 @@ namespace Otel.Presentation
                 errorList.Add("Adres 250 karakterden büyük olamaz.");
             }
 
-            if (true)
+            if (errorList.Count == 0)
             {
+                OtelModel otelModel = new OtelModel();
+                otelModel.Name = txtName.Text;
+                otelModel.PhoneNumber = txtPhone.Text;
+                otelModel.OtelAddress = txtAddress.Text;
+                _otelService.Add(otelModel);
 
             }
         }
