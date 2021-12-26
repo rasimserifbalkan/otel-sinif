@@ -6,5 +6,6 @@ namespace Otel.DataAccess.Concrete.EntityFramework
 {
     public class EfCustomerDal: EfEntityRepositoryBase<Customer, OtelContext>, ICustomerDal
     {
+
     }
 }

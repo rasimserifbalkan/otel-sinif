@@ -14,6 +14,7 @@ namespace Otel.Presentation
     internal static class Program
     {
         public static Container staticContainer = new Container();
+        public static Action _act;
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -28,10 +29,14 @@ namespace Otel.Presentation
             container.Register<IOtelService, OtelManager>(Lifestyle.Singleton);
             container.Register<IOtelDal, EfOtelDal>(Lifestyle.Singleton);
 
+            container.Register<ICustomerService, CustomerManager>(Lifestyle.Singleton);
+            container.Register<ICustomerDal, EfCustomerDal>(Lifestyle.Singleton);
 
             container.Register<frmLogin>(Lifestyle.Singleton);
             container.Register<frmMain>(Lifestyle.Singleton);
-            container.Register<frmAddOtel>(Lifestyle.Singleton);//---
+            container.Register<frmAddOtel>(Lifestyle.Singleton);
+            container.Register<frmCustomerAdd>(Lifestyle.Singleton);///
+            container.Register<frmCustomerList>(Lifestyle.Singleton);///
 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();

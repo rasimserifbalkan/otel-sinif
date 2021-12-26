@@ -28,5 +28,19 @@ namespace Otel.Presentation
         {
 
         }
+
+        private void müşteriEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = Program.staticContainer.GetInstance<frmCustomerAdd>();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void müşteriListeleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = Program.staticContainer.GetInstance<frmCustomerAdd>();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
