@@ -38,7 +38,7 @@ namespace Otel.Presentation
 
         private void müşteriListeleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frm = Program.staticContainer.GetInstance<frmCustomerAdd>();
+            var frm = Program.staticContainer.GetInstance<frmCustomerList>();
             frm.MdiParent = this;
             frm.Show();
         }

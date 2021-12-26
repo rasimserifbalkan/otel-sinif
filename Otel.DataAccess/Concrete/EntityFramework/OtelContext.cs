@@ -13,5 +13,6 @@ namespace Otel.DataAccess.Concrete.EntityFramework
         // bir tablo eklendiğinde tam ismi ve modeli ile buraya eklenmelidir.
         public DbSet<User> Users { get; set; }
         public DbSet<OtelModel> Otels { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }

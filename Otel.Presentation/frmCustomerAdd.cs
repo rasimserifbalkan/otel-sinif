@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Linq;//-------------------
 using System.Drawing;
+using Otel.Business.ExtensionMethods;//-----
 
 namespace Otel.Presentation
 {
@@ -39,8 +40,8 @@ namespace Otel.Presentation
                 {
                     Email = txtEmail.Text,
                     Name = txtName.Text,
-                    CustomerPicture = picCustomer.Image
-                });
+                    CustomerPicture = picCustomer.Image.ToByte()
+                }) ;
             }
             else
             {
@@ -65,6 +66,7 @@ namespace Otel.Presentation
                 var file = openFileDialog.FileName;
                 Image image = Image.FromFile(file);
                 picCustomer.Image = image;
+                txtPicture.Text = file;
             }
         }
     }

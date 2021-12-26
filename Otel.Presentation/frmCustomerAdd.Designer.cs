@@ -73,7 +73,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(69, 13);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(106, 23);
             this.txtName.TabIndex = 1;
@@ -81,15 +81,16 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(69, 40);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(106, 23);
             this.txtEmail.TabIndex = 1;
             // 
             // txtPicture
             // 
+            this.txtPicture.Enabled = false;
             this.txtPicture.Location = new System.Drawing.Point(69, 70);
-            this.txtPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPicture.Margin = new System.Windows.Forms.Padding(2);
             this.txtPicture.Name = "txtPicture";
             this.txtPicture.Size = new System.Drawing.Size(106, 23);
             this.txtPicture.TabIndex = 1;
@@ -97,7 +98,7 @@
             // btnSelectPicture
             // 
             this.btnSelectPicture.Location = new System.Drawing.Point(180, 73);
-            this.btnSelectPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelectPicture.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectPicture.Name = "btnSelectPicture";
             this.btnSelectPicture.Size = new System.Drawing.Size(25, 20);
             this.btnSelectPicture.TabIndex = 2;
@@ -108,7 +109,7 @@
             // btnAddCustomer
             // 
             this.btnAddCustomer.Location = new System.Drawing.Point(69, 97);
-            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(106, 32);
             this.btnAddCustomer.TabIndex = 2;
@@ -119,9 +120,10 @@
             // picCustomer
             // 
             this.picCustomer.Location = new System.Drawing.Point(230, 12);
-            this.picCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.picCustomer.Name = "picCustomer";
             this.picCustomer.Size = new System.Drawing.Size(138, 117);
+            this.picCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picCustomer.TabIndex = 3;
             this.picCustomer.TabStop = false;
             // 
@@ -139,7 +141,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCustomerAdd";
             this.Text = "frmCustomerAdd";
             ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
