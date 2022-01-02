@@ -3,6 +3,7 @@ using Otel.Business.Concrete;
 using Otel.DataAccess.Abstract;
 using Otel.DataAccess.Concrete.EntityFramework;
 using SimpleInjector;
+using SimpleInjector.Lifestyles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,9 @@ namespace Otel.Presentation
         static void Main()
         {
             var container = new Container();
+            //using SimpleInjector.Lifestyles;
+            
+
             staticContainer = container;
             container.Register<ILoginService, LoginManager>(Lifestyle.Singleton);
             container.Register<IUserDal, EfUserDal>(Lifestyle.Singleton);

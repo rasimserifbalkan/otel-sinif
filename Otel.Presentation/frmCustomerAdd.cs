@@ -42,6 +42,7 @@ namespace Otel.Presentation
                     Name = txtName.Text,
                     CustomerPicture = picCustomer.Image.ToByte()
                 }) ;
+                LoadData();//-----
             }
             else
             {
@@ -68,6 +69,16 @@ namespace Otel.Presentation
                 picCustomer.Image = image;
                 txtPicture.Text = file;
             }
+        }
+
+        public void SetEditData(string name,string email,byte[] pic,int id)
+        {
+            txtEmail.Text = email;
+            txtName.Text = name;
+            picCustomer.Image = pic.ToImage();
+            btnAddCustomer.Text = "Kaydet";
+            btnAddCustomer.Tag = id;
+
         }
     }
 }
