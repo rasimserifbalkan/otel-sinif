@@ -42,5 +42,12 @@ namespace Otel.Presentation
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void rezervasyonEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = Program.staticContainer.GetInstance<frmReservationAdd>();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

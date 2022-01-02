@@ -31,7 +31,10 @@ namespace Otel.Business.Concrete
         {
             return _customerDal.List();
         }
-
+        public List<Customer> List(string name)
+        {
+            return _customerDal.List(x => x.Name.ToUpper().Contains(name.ToUpper()));
+        }
         public void Update(Customer Customer)
         {
             _customerDal.Update(Customer);

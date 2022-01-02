@@ -41,6 +41,8 @@ namespace Otel.Presentation
             container.Register<frmAddOtel>(Lifestyle.Singleton);
             container.Register<frmCustomerAdd>(Lifestyle.Singleton);///
             container.Register<frmCustomerList>(Lifestyle.Singleton);///
+            container.Register<frmReservationAdd>(Lifestyle.Singleton);////----------------
+            
 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();

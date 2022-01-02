@@ -34,6 +34,8 @@
             this.müşteriİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.müşteriEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.müşteriListeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rezervasyonİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rezervasyonEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +44,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.otelİşlemleriToolStripMenuItem,
-            this.müşteriİşlemleriToolStripMenuItem});
+            this.müşteriİşlemleriToolStripMenuItem,
+            this.rezervasyonİşlemleriToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -77,16 +80,31 @@
             // müşteriEkleToolStripMenuItem
             // 
             this.müşteriEkleToolStripMenuItem.Name = "müşteriEkleToolStripMenuItem";
-            this.müşteriEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.müşteriEkleToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.müşteriEkleToolStripMenuItem.Text = "Müşteri Ekle";
             this.müşteriEkleToolStripMenuItem.Click += new System.EventHandler(this.müşteriEkleToolStripMenuItem_Click);
             // 
             // müşteriListeleToolStripMenuItem
             // 
             this.müşteriListeleToolStripMenuItem.Name = "müşteriListeleToolStripMenuItem";
-            this.müşteriListeleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.müşteriListeleToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.müşteriListeleToolStripMenuItem.Text = "Müşteri Listele";
             this.müşteriListeleToolStripMenuItem.Click += new System.EventHandler(this.müşteriListeleToolStripMenuItem_Click);
+            // 
+            // rezervasyonİşlemleriToolStripMenuItem
+            // 
+            this.rezervasyonİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rezervasyonEkleToolStripMenuItem});
+            this.rezervasyonİşlemleriToolStripMenuItem.Name = "rezervasyonİşlemleriToolStripMenuItem";
+            this.rezervasyonİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(131, 20);
+            this.rezervasyonİşlemleriToolStripMenuItem.Text = "Rezervasyon İşlemleri";
+            // 
+            // rezervasyonEkleToolStripMenuItem
+            // 
+            this.rezervasyonEkleToolStripMenuItem.Name = "rezervasyonEkleToolStripMenuItem";
+            this.rezervasyonEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rezervasyonEkleToolStripMenuItem.Text = "Rezervasyon Ekle";
+            this.rezervasyonEkleToolStripMenuItem.Click += new System.EventHandler(this.rezervasyonEkleToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -113,5 +131,7 @@
         private System.Windows.Forms.ToolStripMenuItem müşteriİşlemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem müşteriEkleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem müşteriListeleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rezervasyonİşlemleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rezervasyonEkleToolStripMenuItem;
     }
 }

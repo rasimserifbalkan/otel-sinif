@@ -9,6 +9,7 @@ namespace Otel.Business.Abstract
         void Add(Customer Customer);
         void Update(Customer Customer);
         List<Customer> List();
+        List<Customer> List(string name);
         Customer Get(string name);
         Customer Get(int Id);
     }
